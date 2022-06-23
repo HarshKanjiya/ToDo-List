@@ -1,0 +1,26 @@
+.input-container{
+    display: flex;
+    flex-direction: raw;
+
+    .input{
+        width: 80%;
+        text-align: center;
+        height: 35px;
+        border: 1px solid rgb(121, 121, 121);
+        border-radius: 5px;
+        
+    }
+    .button{
+        height: 35px;
+        width: 35px;
+        margin-left: 20px;
+        border: 0;
+        background-color: rgb(126, 255, 255);
+        border-radius: 5px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+    }
+}

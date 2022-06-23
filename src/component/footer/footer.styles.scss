@@ -1,0 +1,16 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+
+    
+    .clear-all{
+        margin-left: 20px;
+        padding: 5px 5px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: rgb(255, 152, 152);
+        color: white;
+    }
+}
