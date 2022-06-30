@@ -1,14 +1,13 @@
-import ListItem from '../list-item/list-item.component';
-import { useContext } from 'react';
-import { ListContext } from '../../context/list.context';
+import ListItem from '../list-item/list-item.component'
 import './list.styles.scss'
 
-const List = () => {
-    
+const List = ({todos}) => {
+
     return(
         <div className='list-container'>
-            
-            <ListItem/>
+            {
+                todos.map((todo, index)=>( <ListItem todo={todo} key={index}  /> ))
+            }
         </div>
     )
 }

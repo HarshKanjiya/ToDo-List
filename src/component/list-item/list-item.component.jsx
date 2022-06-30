@@ -1,12 +1,16 @@
+
 import './list-item.styles.scss'
 
-const ListItem = (props) => {
-    const { item } = props;
+const ListItem = ({todo,index,deleteElement}) => {
+
+    const remove = () => {
+        deleteElement(index)
+    }
     return(
         <div className='list-item-container'>
-            <span className='task'>{item}</span>
-            <button className='clear-task'> + </button>
-        </div>
-    )
+            <span className='task'>{todo}</span>
+            <button className='clear-task' onClick={remove} > + </button>
+        </div>      
+)
 }
 export default ListItem;
