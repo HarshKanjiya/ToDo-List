@@ -31,7 +31,10 @@ const Input = ()  => {
             }
         }
         setTodos(y)
-        console.log('y', y)
+        // console.log('y', y)
+    }
+    const erase = () =>{
+        setTodos([])
     }
 
     return(
@@ -59,7 +62,7 @@ const Input = ()  => {
             </div>        
             
 
-            <Footer />
+            <Footer todos={todos} erase={erase}/>
             
                 
         </>
